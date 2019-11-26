@@ -20,10 +20,7 @@ xcodebuild -workspace $myworkspace -scheme $myscheme clean&&
 xcodebuild -workspace $myworkspace -scheme $myscheme \
 -configuration Debug GCC_PRECOMPILE_PREFIX_HEADER=YES CLANG_ENABLE_MODULE_DEBUGGING=NO COMPILER_INDEX_STORE_ENABLE=NO \
 -destination 'platform=iOS Simulator,name=iPhone X' \
-
-| xcpretty -r json-compilation-database -o compile_commands.json&&
-# OCLint的规则 可以通过 -e 参数忽略指定的文件，比如忽略Pods文件夹,AppDelegate.m文件
-oclint-json-compilation-database -e Pods -e node_modules -- \
+| xcpretty -r json-compilation-database -o compile_commands.json&&oclint-json-compilation-database -e Pods -e node_modules -- \
 oclint-json-compilation-database -e APPDelegate -- \
 
 -report-type pmd \
@@ -45,3 +42,11 @@ if [ -f ./oclint_result.xml ];
 then echo 'done';
 else echo 'failed';
 fi
+
+#忽略可检测文件 clint-json-compilation-database -e APPDelegate（文件夹名） -- \
+#通过//!OCLint注释的方式，不让OCLint检查
+#可以用 -rc 改变检查规则的默认值
+#禁止某一个规则的使用可以使用命令-disable-rule
+#OCLint 0.13 includes 71 rules : http://docs.oclint.org/en/stable/rules/index.html
+
+

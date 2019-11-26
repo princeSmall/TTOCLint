@@ -50,6 +50,9 @@ echo "reportType为：${reportType}"
 
 xcodebuild -workspace $myworkspace -scheme $myscheme clean
 xcodebuild clean
+# 清除上次编译数据
+rm compile_commands.json
+rm -rf build
 
 echo '-----开始编译-----'
 
@@ -107,10 +110,7 @@ ${nowReportType} \
 -max-priority-2=100000 \
 -max-priority-3=100000
 
-# 清除上次编译数据
-rm compile_commands.json
-rm -rf build
-open pmd.html
+
 }
 
 # 替换workspace的名字

@@ -27,6 +27,7 @@
 		1C2919F42387D46E00CFD166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2919F32387D46E00CFD166 /* Assets.xcassets */; };
 		1C2919F72387D46E00CFD166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2919F52387D46E00CFD166 /* LaunchScreen.storyboard */; };
 		1C2919FA2387D46E00CFD166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2919F92387D46E00CFD166 /* main.m */; };
+		1C2B2962238D187C00F5787F /* oclint.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B2961238D187B00F5787F /* oclint.sh */; };
 		D5D1F3D180D08E4DAD29CA1B /* libPods-TTOCLint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B242A04AC7963C37FA83AD6E /* libPods-TTOCLint.a */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +43,8 @@
 		1C2919F62387D46E00CFD166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C2919F82387D46E00CFD166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C2919F92387D46E00CFD166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C291A052387D69F00CFD166 /* oclint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = oclint.sh; sourceTree = "<group>"; };
 		1C2B295F238CD51B00F5787F /* oclint_result.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = oclint_result.sh; sourceTree = "<group>"; };
+		1C2B2961238D187B00F5787F /* oclint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = oclint.sh; sourceTree = "<group>"; };
 		6EF4CDE1B19FEED5D0CDCD98 /* Pods-TTOCLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTOCLint.release.xcconfig"; path = "Target Support Files/Pods-TTOCLint/Pods-TTOCLint.release.xcconfig"; sourceTree = "<group>"; };
 		B242A04AC7963C37FA83AD6E /* libPods-TTOCLint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTOCLint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2B295F238CD51B00F5787F /* oclint_result.sh */,
-				1C291A052387D69F00CFD166 /* oclint.sh */,
+				1C2B2961238D187B00F5787F /* oclint.sh */,
 				1C2919E92387D46D00CFD166 /* TTOCLint */,
 				1C2919E82387D46D00CFD166 /* Products */,
 				75B90CA7A8E449AF41A5E07B /* Pods */,
@@ -186,6 +187,7 @@
 				1C2919F72387D46E00CFD166 /* LaunchScreen.storyboard in Resources */,
 				1C2919F42387D46E00CFD166 /* Assets.xcassets in Resources */,
 				1C2919F22387D46D00CFD166 /* Main.storyboard in Resources */,
+				1C2B2962238D187C00F5787F /* oclint.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
