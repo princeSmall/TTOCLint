@@ -91,8 +91,7 @@
 		1C2919E92387D46D00CFD166 /* TTOCLint */ = {
 			isa = PBXGroup;
 			children = (
-				1C2919EA2387D46D00CFD166 /* AppDelegate.h */,
-				1C2919EB2387D46D00CFD166 /* AppDelegate.m */,
+				1C2B2960238D074900F5787F /* APPDelegate */,
 				1C2919ED2387D46D00CFD166 /* ViewController.h */,
 				1C2919EE2387D46D00CFD166 /* ViewController.m */,
 				1C2919F02387D46D00CFD166 /* Main.storyboard */,
@@ -102,6 +101,15 @@
 				1C2919F92387D46E00CFD166 /* main.m */,
 			);
 			path = TTOCLint;
+			sourceTree = "<group>";
+		};
+		1C2B2960238D074900F5787F /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1C2919EA2387D46D00CFD166 /* AppDelegate.h */,
+				1C2919EB2387D46D00CFD166 /* AppDelegate.m */,
+			);
+			path = APPDelegate;
 			sourceTree = "<group>";
 		};
 		75B90CA7A8E449AF41A5E07B /* Pods */ = {
