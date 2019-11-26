@@ -17,12 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BOOL isString = false;
+    if (isString) {
+        
+    }else{
+        
+    }
     // Do any additional setup after loading the view.
 }
 - (NSString *)returnFromString:(NSString *)str{
     return @"1";
 }
 - (void)test{
+    NSInteger i;
+}
+
+- (void)aaaaaaaaaaaaaaaaaaaaaaaaaaaa:(NSString *)bbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccc:(NSString *)d{
     
 }
 

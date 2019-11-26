@@ -20,8 +20,12 @@ xcodebuild -workspace $myworkspace -scheme $myscheme clean&&
 xcodebuild -workspace $myworkspace -scheme $myscheme \
 -configuration Debug GCC_PRECOMPILE_PREFIX_HEADER=YES CLANG_ENABLE_MODULE_DEBUGGING=NO COMPILER_INDEX_STORE_ENABLE=NO \
 -destination 'platform=iOS Simulator,name=iPhone X' \
+
 | xcpretty -r json-compilation-database -o compile_commands.json&&
+# OCLint的规则 可以通过 -e 参数忽略指定的文件，比如忽略Pods文件夹,AppDelegate.m文件
 oclint-json-compilation-database -e Pods -e node_modules -- \
+oclint-json-compilation-database -e AppDelegate.m -- \
+
 -report-type pmd \
 -rc LONG_LINE=300 \
 -rc LONG_METHOD=200 \
