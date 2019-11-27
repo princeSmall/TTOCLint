@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="oclint-0.13"><file name="/Users/letong/Desktop/TTPopView/TTOCLint/TTOCLint/ViewController.m">
+<violation begincolumn="10" endcolumn="5" beginline="23" endline="25" priority="3" rule="empty else block" ruleset="empty" >
+
+</violation>
+</file>
+
+<file name="/Users/letong/Desktop/TTPopView/TTOCLint/TTOCLint/ViewController.m">
+<violation begincolumn="19" endcolumn="5" beginline="21" endline="23" priority="3" rule="empty if statement" ruleset="empty" >
+
+</violation>
+</file>
+
+</pmd>

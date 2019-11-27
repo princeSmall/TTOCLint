@@ -29,12 +29,10 @@
     return @"1";
 }
 - (void)test{
-    NSInteger i;
-}
-
-- (void)aaaaaaaaaaaaaaaaaaaaaaaaaaaa:(NSString *)bbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccc:(NSString *)d{
     
 }
+
+
 
 
 @end
