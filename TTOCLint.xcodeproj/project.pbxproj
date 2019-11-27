@@ -209,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash ./oclint_result.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash ./oclint.sh\n";
 		};
 		35B9AE26ABF635906E3551D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
