@@ -72,7 +72,7 @@ echo '-----分析中-----'
 
 # 自定义排除警告的目录，将目录字符串加到数组里面
 # 转化为：-e Debug.m -e Port.m -e Test
-exclude_files=("cardloan_js" "Pods")
+exclude_files=("cardloan_js" "Pods" "APPDelegate")
 
 exclude=""
 for i in ${exclude_files[@]}; do
